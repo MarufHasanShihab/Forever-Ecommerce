@@ -1,6 +1,6 @@
 import PropTypes from "prop-types"
 import { useContext } from "react";
-import { shopContext } from "../context/ShopContext";
+import { shopContext } from "../../context/ShopContext";
 import { Link } from "react-router-dom";
 
 
