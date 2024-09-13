@@ -2,6 +2,8 @@ import { Outlet } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import Footer from "../Footer/Footer";
 import Searchbar from "../Searchbar/Searchbar";
+import 'react-toastify/dist/ReactToastify.css';
+import { ToastContainer } from 'react-toastify';
 
 
 const MainLayout = () => {
@@ -11,6 +13,7 @@ const MainLayout = () => {
             <Searchbar/>
             <Outlet/>
             <Footer/>
+            <ToastContainer/>
         </div>
     );
 };
