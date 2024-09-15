@@ -57,7 +57,7 @@ const Product = () => {
             <div className="flex gap-2">
               {product?.sizes?.map((item, index) => (
                 <button
-                  onClick={() => setSize(item)}
+                  onClick={() => setSize(size === "" ? item : "")}
                   className={`border py-2 px-4 bg-gray-100 ${
                     size === item ? "border-orange-500" : ""
                   }`}
@@ -68,7 +68,10 @@ const Product = () => {
               ))}
             </div>
           </div>
-          <button onClick={()=> addToCart(product._id, size)} className="bg-black text-white py-3 px-8 text-sm active:bg-gray-700 uppercase">
+          <button
+            onClick={() => addToCart(product._id, size)}
+            className="bg-black text-white py-3 px-8 text-sm active:bg-gray-700 uppercase"
+          >
             Add To Cart
           </button>
           <hr className="mt-8 sm:w-4/5" />
@@ -104,7 +107,10 @@ const Product = () => {
         </div>
       </div>
       {/* Display Related Product */}
-      <RelatedProducts category={product.category} subCategory={product.subCategory}/>
+      <RelatedProducts
+        category={product.category}
+        subCategory={product.subCategory}
+      />
     </div>
   );
 };

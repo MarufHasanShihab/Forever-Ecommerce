@@ -7,8 +7,8 @@ import Contact from "../../pages/Contact"
 import Product from './../../pages/Product';
 import Cart from './../../pages/Cart';
 import Login from './../../pages/Login';
-import PleaceOrder from './../../pages/PleaceOrder';
-import Order from "../../pages/Order";
+import PleaceOrder from "../../pages/PleaseOrder";
+import Order from "./../../pages/Order"
 
 const router = createBrowserRouter([
     {
