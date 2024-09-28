@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { assets } from "../assets/frontend_assets/assets";
 import CartTotal from "../components/CartTotal/CartTotal";
-import Title from "../components/Titile/Title";
+import Title from "../components/Title/Title";
 import { useNavigate } from "react-router-dom";
 
 

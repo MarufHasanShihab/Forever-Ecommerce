@@ -31,11 +31,11 @@ const Navbar = () => {
                 <div className="group relative">
                 <Link to="/login"><img src={assets.profile_icon} alt="search_icon" className="w-5 cursor-pointer" /></Link>
                 <div className="hidden group-hover:block absolute dropdown-menu right-0 pt-4">
-                    <div className="flex flex-col gap-2 py-3 px-5 w-36 bg-slate-100 text-gray-700 rounded">
+                    {/* <div className="flex flex-col gap-2 py-3 px-5 w-36 bg-slate-100 text-gray-700 rounded">
                         <p className="cursor-pointer hover:text-black">My Profile</p>
                         <p className="cursor-pointer hover:text-black">Orders</p>
                         <p className="cursor-pointer hover:text-black">Logout</p>
-                    </div>
+                    </div> */}
                 </div>
                 </div>
                 <Link to="/cart" className="relative">

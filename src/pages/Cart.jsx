@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from "react";
 import { shopContext } from "../context/ShopContext";
-import Title from "../components/Titile/Title";
+import Title from "../components/Title/Title";
 import { assets } from "../assets/frontend_assets/assets";
 import CartTotal from "../components/CartTotal/CartTotal";
 import { useNavigate } from "react-router-dom";
